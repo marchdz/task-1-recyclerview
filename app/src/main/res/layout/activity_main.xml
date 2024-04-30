@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:layout_marginTop="@dimen/common_padding_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_row" />
+
+    <ImageButton
+        android:id="@+id/ibtnAdd"
+        android:layout_width="@dimen/add_row_cross_icon"
+        android:layout_height="@dimen/add_row_cross_icon"
+        android:backgroundTint="@color/translucent"
+        android:contentDescription="@string/description_add_row"
+        android:padding="@dimen/common_padding_default"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_add_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/add_row_plus_symbol" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

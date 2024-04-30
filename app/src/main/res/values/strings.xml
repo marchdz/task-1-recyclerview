@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Task 1: RecyclerView</string>
+    <string name="description_add_row">Añadir fila</string>
+</resources>
